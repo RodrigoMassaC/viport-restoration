@@ -7,7 +7,7 @@ export default function ResidentialServices() {
     <div className="bg-surface text-on-surface font-body">
       <Navbar />
 
-      <main className="pt-32">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative px-8 mb-24 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
