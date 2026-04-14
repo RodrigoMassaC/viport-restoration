@@ -257,45 +257,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── Blog ─── */}
-        <section className="py-24 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto px-8">
-            <div className="flex justify-between items-end mb-12">
-              <h2 className="text-4xl font-black text-primary font-headline tracking-tighter">Latest insights.</h2>
-              <a className="text-secondary font-bold text-sm uppercase tracking-widest border-b-2 border-secondary pb-1" href="#">View All Posts</a>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBjBRCRyJ--e2D0j_yClrlCMp9lPZnUzw5GRJib_iVTJaJ0HkgGaskefZdUmpgKWuPTWB_Ns2WIKRM4LGsBOlHx6n4-X9MoFGYuCo5PizYVnOZOZ90gksEPCbEdlevzdoYfh5eKiEIXfQt1m9jDwyTGI748YYSi2HFaAqZ18I_JyiNjGrKwfGxDkV6U7YxdokH841U9fmAr5bicmGZLBNdH2vY8nIxCMW2ZgP6dESdvHPVEP85Q52LzbAFoNQYQLYaqgh6vMr1rXNo",
-                  title: "Preventing Mold After Heavy Summer Rain",
-                  desc: "Understanding the 48-hour window for moisture mitigation in humid climates.",
-                },
-                {
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC6OyBFLKMKq2KrpbVS8PUOIU53UpLhSnhx63hZyzx0kQU9pdLK3V_h-cMa1q359tau9xWou6EMgB2eghLT6QWSG1utM6n3A_gZjJdhNnTHxaH_6VZZCWj4ZkhVm6l-DQ1knr2RgdKsSSl9niHLcL-qbh2KI-69vSBC8wcdRRKwKuVkmuctgRNBGv4zcC4okDId_oH25M3wcrdcQ0CQvOQVB1aLS25xp7IWEkjyAMsfhRXksijdIweohK-lOlI-eO-T9dHreBC-7Co",
-                  title: "Commercial Continuity Planning",
-                  desc: "How professional restoration can save your business from months of closure.",
-                },
-                {
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuADW3ooyIEN6vrzfQero2LP-TmeKToG2L0hvLpRIm7l8r7dAxGo-yTMD2BPoTDFDjYCuXNwNliaCgQesIIzt9FUdKbtHAV3WDjL7JTmV_MmMN8XklOj1jzQVAlPsu_LRWIwGuUJaZqFzDsoiBsBAdRmmsOozjsYX8c07FCykQEPqHXezGOtphLNeZR8Zfr6JnJ_PhKy9RhpmyDZd3dZBQxnhteSXGcqB8JBQ1teVxPxaTKTTtjxHmByyYaJMQEvekYm8UbrV3kA4Do",
-                  title: "Hurricane Readiness 2024",
-                  desc: "Essential structural reinforcements for the upcoming season.",
-                },
-              ].map((post) => (
-                <div key={post.title} className="group cursor-pointer">
-                  <div className="aspect-[16/10] overflow-hidden rounded-xl mb-4">
-                    <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src={post.img} alt={post.title} />
-                  </div>
-                  <h3 className="text-xl font-bold text-primary font-headline group-hover:text-secondary transition-colors mb-2">{post.title}</h3>
-                  <p className="text-on-surface-variant text-sm mb-4 line-clamp-2">{post.desc}</p>
-                  <span className="text-xs font-bold text-secondary tracking-widest uppercase flex items-center gap-2">
-                    Read more <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
