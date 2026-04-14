@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoViport from "@/assets/logo_viport.png";
 
 const serviceLinks = [
   { label: "Hurricane", href: "/hurricane-storm-repair" },
