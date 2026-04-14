@@ -25,7 +25,7 @@ export default function HurricaneStormRepair() {
                 <span className="text-[10px] font-bold uppercase tracking-widest">Rapid Response Unit</span>
               </div>
               <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-white leading-[1.1] mb-8 tracking-tight">
-                Florida Hurricane <br />
+                Hurricane <br />
                 <span className="text-secondary-fixed-dim">& Storm Damage</span> Experts
               </h1>
               <p className="font-body text-xl text-primary-fixed max-w-2xl leading-relaxed mb-10 opacity-90">
@@ -50,7 +50,7 @@ export default function HurricaneStormRepair() {
             <div className="mb-20 text-center max-w-3xl mx-auto">
               <h2 className="font-headline font-black text-4xl md:text-5xl text-primary mb-6">Mastering the Aftermath</h2>
               <div className="h-1.5 w-24 bg-secondary mx-auto mb-8"></div>
-              <p className="text-on-surface-variant text-lg">Comprehensive restoration services engineered for Florida's harshest weather conditions.</p>
+              <p className="text-on-surface-variant text-lg">Comprehensive restoration services engineered for the harshest weather conditions.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -175,7 +175,7 @@ export default function HurricaneStormRepair() {
           <div className="absolute inset-0 bg-primary z-0"></div>
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="font-headline font-black text-4xl md:text-6xl text-white mb-8">Ready to Restore <br />Your Property?</h2>
-            <p className="text-primary-fixed text-xl mb-12 opacity-80">Don't wait for secondary damage to set in. Our rapid response team is standing by across Florida.</p>
+            <p className="text-primary-fixed text-xl mb-12 opacity-80">Don't wait for secondary damage to set in. Our rapid response team is standing by across the country.</p>
             <div className="bg-surface-container-lowest p-2 rounded-xl shadow-2xl flex flex-col md:flex-row gap-2 max-w-2xl mx-auto">
               <input className="flex-1 bg-transparent border-none focus:ring-0 px-6 py-4 font-bold text-primary placeholder:text-outline-variant" placeholder="Enter Phone Number" type="tel" />
               <Link to="/contact" className="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-headline font-extrabold text-lg hover:bg-on-secondary-container transition-all">

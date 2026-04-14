@@ -47,7 +47,7 @@ export default function Navbar() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-on-tertiary-container opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
           </span>
-          Emergency 24/7 Response Available Across Florida
+          Emergency 24/7 Response Available Nationwide
         </span>
         <span className="text-[10px] font-bold uppercase tracking-wider hidden sm:block">Call Now: (800) VIP-REST</span>
       </div>

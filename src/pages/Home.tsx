@@ -21,7 +21,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
                 <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                Florida's Trusted Guardians
+                Your Trusted Guardians
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-white font-headline leading-[1.05] tracking-tighter">
                 Residential and commercial damage restoration services available 24/7
@@ -134,7 +134,7 @@ export default function Home() {
                 <div className="absolute -bottom-8 -right-8 w-64 bg-primary p-8 rounded-2xl editorial-shadow hidden md:block">
                   <span className="text-4xl font-black text-white font-headline block mb-2">15+</span>
                   <span className="text-white/70 text-xs font-bold uppercase tracking-widest leading-tight block">
-                    Years of industry leadership in Florida
+                    Years of industry leadership nationwide
                   </span>
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-8 py-4 border-y border-outline-variant/30">
                   <div>
                     <h4 className="text-primary font-bold mb-1">Elite Fleet</h4>
-                    <p className="text-on-surface-variant text-sm">24 specialized response vehicles across Florida.</p>
+                    <p className="text-on-surface-variant text-sm">24 specialized response vehicles across the country.</p>
                   </div>
                   <div>
                     <h4 className="text-primary font-bold mb-1">Direct Billing</h4>
@@ -239,7 +239,7 @@ export default function Home() {
               <div className="w-full md:w-1/2 space-y-6">
                 <span className="text-secondary font-bold text-sm uppercase tracking-widest">Our Coverage</span>
                 <h2 className="text-4xl md:text-5xl font-black text-primary font-headline tracking-tighter">
-                  We get to where you are in Florida.
+                  We get to where you are, nationwide.
                 </h2>
                 <p className="text-on-surface-variant text-lg">
                   With strategic depots located throughout the state, our fleet is always within reach. Whether it's a coastal storm surge or a residential pipe burst, our logistics engine ensures we arrive before the damage spreads.
@@ -279,7 +279,7 @@ export default function Home() {
                 {
                   img: "https://lh3.googleusercontent.com/aida-public/AB6AXuADW3ooyIEN6vrzfQero2LP-TmeKToG2L0hvLpRIm7l8r7dAxGo-yTMD2BPoTDFDjYCuXNwNliaCgQesIIzt9FUdKbtHAV3WDjL7JTmV_MmMN8XklOj1jzQVAlPsu_LRWIwGuUJaZqFzDsoiBsBAdRmmsOozjsYX8c07FCykQEPqHXezGOtphLNeZR8Zfr6JnJ_PhKy9RhpmyDZd3dZBQxnhteSXGcqB8JBQ1teVxPxaTKTTtjxHmByyYaJMQEvekYm8UbrV3kA4Do",
                   title: "Hurricane Readiness 2024",
-                  desc: "Essential structural reinforcements for the upcoming season in Florida.",
+                  desc: "Essential structural reinforcements for the upcoming season.",
                 },
               ].map((post) => (
                 <div key={post.title} className="group cursor-pointer">
