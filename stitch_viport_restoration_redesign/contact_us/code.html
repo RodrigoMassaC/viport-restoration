@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script type='text/javascript' nonce='feQwEc19oIdv1c1Hi2VEtQ==' src='https://contribution.usercontent.google.com/MaLGQNpAinbJ1j2sp8wgSirlmSfeitwubbbHCiXcOqGWdVldGE-lFg9j9FmcsLLm4AuCEPpb5tg8t93vV5IwdPT-gL4hOr1kOKE1JrDCD7ePYFe1qnDzToU_da56Fn6rIACwzKPkMuN4pQFwDh_RNYZaI4Sm8YVCpg__dL0P5DvlBwPfTKVxNKvTK9SWfpbEeNURtFVEHP2GFp_7d232fQaTExn3oo7lW1UtTZLqroAh4oKSWl6U5mTjxvP6Qw1viFOr8YWZ2S_5IW1WtfLH8KbMYhb50g_YxHzAJURoD5XT6-emJEUM2ggbluNslmDQypgVPTqGAGLqvq_eKVybKdJyHqF14C7ehhoJJKFBMiKOWKo6hE6BP4_0uexXN3trMCVMut7H5i5uh00M725GqTuCVhqzN8OiLVK4HEHoPx4VTEiEIBi1dYbngD7YLfAEPGpcyJX6CbVWnov5yUQ5p06bci5WIsYT7itb39X0fy91VKaqhp7hWFuNMtWEV7t0qBvu_3PrrajACMv8gKvjRmfP5q-ES8t99gieMxmyglQl3q_q5rqmDNFOrazfUloyezo16PJn8OytRDSZAG3Ck6y8FI83iEIrrbpJUriuPLXdpux4TiyAOnNYsjM7J6892v4TTuk7bXV_RN-3hhFujJXRhti-JxTcrH1DzTQAJzqQENZMIy9YTZOUBoJaJyRa5l_SmeY7FWEYj4nLMAZz-yh0vf8kSQ0HV8AeOsgnfk0qwsUMYY5eFpCLuvum8X7l-NwUwnf_iKMCw2afsUZ39Gk7nrZmvF6wqsOXPg'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#001d34",
+                    "surface-container-low": "#eef4ff",
+                    "primary-fixed-dim": "#a9caef",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#e9f1ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffddb8",
+                    "surface-container": "#e4efff",
+                    "surface-container-highest": "#cfe4ff",
+                    "outline": "#73777e",
+                    "tertiary-fixed-dim": "#62e056",
+                    "background": "#f8f9ff",
+                    "on-primary-container": "#7898bc",
+                    "inverse-primary": "#a9caef",
+                    "on-tertiary-fixed": "#002201",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#003702",
+                    "on-secondary-container": "#6b4200",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#daeaff",
+                    "secondary": "#855300",
+                    "primary": "#001b31",
+                    "secondary-fixed-dim": "#ffb95f",
+                    "tertiary-fixed": "#7ffe6f",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#416181",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#653e00",
+                    "on-tertiary-fixed-variant": "#005305",
+                    "on-primary-fixed-variant": "#284968",
+                    "inverse-surface": "#0d3251",
+                    "on-surface-variant": "#43474d",
+                    "surface-dim": "#c0ddff",
+                    "on-tertiary-container": "#29ac28",
+                    "tertiary": "#001f01",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#09304e",
+                    "primary-fixed": "#cfe4ff",
+                    "on-secondary-fixed": "#2a1700",
+                    "surface-variant": "#cfe4ff",
+                    "on-primary-fixed": "#001d34",
+                    "on-background": "#001d34",
+                    "secondary-container": "#ffa92b",
+                    "outline-variant": "#c3c7ce"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .tonal-transition {
+            background: linear-gradient(180deg, #f8f9ff 0%, #eef4ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Urgency Banner -->
+<div class="w-full bg-tertiary-container text-on-tertiary py-2 px-8 flex justify-center items-center gap-4 sticky top-0 z-[60]">
+<span class="material-symbols-outlined text-sm" data-weight="fill">emergency</span>
+<span class="text-xs font-label uppercase tracking-widest font-bold">24/7 Emergency Restoration Hotline: (800) VIP-REST</span>
+</div>
+<!-- Top Navigation Bar -->
+<nav class="fixed top-8 w-full z-50">
+<div class="max-w-8xl mx-auto px-8">
+<div class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(0,29,52,0.06)] flex justify-between items-center w-full px-8 py-4 rounded-xl">
+<div class="text-xl font-black text-blue-950 dark:text-white uppercase tracking-tighter font-headline">
+                    VIPORT RESTORATION
+                </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 hover:text-amber-600 transition-colors font-headline font-bold tracking-tight" href="#">Services</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-amber-600 transition-colors font-headline font-bold tracking-tight" href="#">About Us</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-amber-600 transition-colors font-headline font-bold tracking-tight" href="#">Blog</a>
+<a class="text-amber-600 dark:text-amber-500 font-bold border-b-2 border-amber-600 font-headline tracking-tight" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden lg:block text-slate-700 dark:text-slate-300 font-medium text-sm">EN/ES</span>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-md font-headline font-bold text-sm scale-95 active:scale-90 transition-transform shadow-sm">
+                        Emergency 24/7
+                    </button>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section & Contact Shell -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Editorial Left: Information & Identity -->
+<div class="lg:col-span-5 space-y-12">
+<div>
+<h1 class="font-headline font-extrabold text-5xl lg:text-7xl text-primary leading-none tracking-tighter mb-6">
+                            Let's Rebuild <br/><span class="text-secondary">Together.</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                            From emergency mitigation to full structural restoration, our architectural guardian approach ensures your property is returned to its peak condition.
+                        </p>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="bg-surface-container-highest p-4 rounded-xl text-primary">
+<span class="material-symbols-outlined text-3xl">phone_in_talk</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary">Call Our Experts</h4>
+<p class="text-on-surface-variant font-medium">(800) VIP-REST</p>
+<p class="text-on-surface-variant text-sm mt-1">Available 24/7 for emergencies</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="bg-surface-container-highest p-4 rounded-xl text-primary">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary">Visit Our Office</h4>
+<p class="text-on-surface-variant font-medium">1200 Industrial Way, Suite 400</p>
+<p class="text-on-surface-variant">Miami, FL 33101</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="bg-surface-container-highest p-4 rounded-xl text-primary">
+<span class="material-symbols-outlined text-3xl">alternate_email</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary">General Inquiries</h4>
+<p class="text-on-surface-variant font-medium">contact@viportrestoration.com</p>
+</div>
+</div>
+</div>
+<!-- Trust Indicators -->
+<div class="pt-8 border-t border-outline-variant/15 flex items-center gap-8">
+<div class="flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" data-alt="professional restoration specialist portrait in uniform looking confident and helpful" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4UAKhOJOiX0IA1YY6XmOiSrGRp6694qgmeKpmu-UuEkX1h-EjlugJ4r-wgdiKMrNuIr0StqUPg-4-Jk29U70tnNdJE5WTkziujQSk1scaqb4Bx3nLpYKudCbMEdFu-B6mntXHBjoJmfpZIw-FJf9fJBEj_GO17f0-adknPiGHXfEHcpJKG_IIu0dr2-5aR8zmgSo-rmVKZ3lzyWyIDHu3x1NyaAqzTf164nN9fxIMY-DGLstOA7T2klMUfdxbSmclM4uiTryjqcE"/>
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" data-alt="smiling female client service manager in modern office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAawI80OXYks9JDL4B6rU_7s0hKRc85Nr26aP_F-4xKgqQz7NmAKNVIEu8lbkGhmKzRdsT_VFe6ZSx1PjZzo2yJ9NJJLC-KkI17Gas7wzgZp_TiItKN8wCd7F9-UteX58aBWzFzmgMXQ96-eKBvm3V7y56HQXm9LCi2bKvgV3fMPy0cTbhXOZTFP0WJVwIBaqLWK-byypCjz2gWi0aqqiOgGVIgLTNpzQYIdCr3edxJyGWwlitL6u7OATHLcTk9cxnEntASIHXvtAA"/>
+<div class="w-12 h-12 rounded-full border-4 border-white bg-primary flex items-center justify-center text-white text-xs font-bold font-headline">+15</div>
+</div>
+<p class="text-sm font-label text-on-surface-variant">
+<span class="font-bold text-primary">24/7 Experts</span> waiting to <br/>assist with your inspection.
+                        </p>
+</div>
+</div>
+<!-- Right Canvas: Form & Asymmetry -->
+<div class="lg:col-span-7 relative">
+<div class="bg-surface-container-lowest rounded-2xl p-10 lg:p-16 shadow-[0px_20px_40px_rgba(0,29,52,0.06)] relative z-10 border border-outline-variant/10">
+<h3 class="font-headline font-bold text-2xl text-primary mb-8 flex items-center gap-3">
+                            Request Inspection
+                            <span class="h-px flex-1 bg-outline-variant/20"></span>
+</h3>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60" placeholder="John Doe" type="text"/>
+</div>
+<div class="relative">
+<label class="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60" placeholder="john@example.com" type="email"/>
+</div>
+<div class="relative">
+<label class="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Service Type</label>
+<select class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all appearance-none">
+<option>Water Damage</option>
+<option>Mold Remediation</option>
+<option>Fire &amp; Smoke</option>
+<option>Hurricane Response</option>
+<option>Residential Restoration</option>
+<option>Commercial Property</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Describe Your Situation</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60 resize-none" placeholder="Briefly describe the damage or project needs..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-headline font-extrabold py-5 rounded-md text-lg shadow-lg hover:shadow-xl hover:bg-on-secondary-container transition-all flex items-center justify-center gap-3 active:scale-95">
+                                Send Request 
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Visual Accent (Editorial Overlap) -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-surface-container-highest/50 rounded-full blur-3xl -z-0"></div>
+</div>
+</div>
+</section>
+<!-- Map & Location Section (Asymmetric Bento Grid) -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 h-[600px]">
+<!-- Large Map Placeholder -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-slate-200" data-location="Miami, FL" style="">
+<img class="w-full h-full object-cover grayscale opacity-80" data-alt="overhead satellite map view of city grid with subtle blue and grey industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnpeC6DGugBR5KphjN1FHysOGewVzJyS4ppG1IaXC9idUiKmk2to-Y9aLoViWeczhPJSwHZIJBqYK7T1gCC3_5nnY0z1bGspbjqlIA0sboQrbV5NYjhbziLgbNFD0pWoWwA9PECt8mGnZ3bH2ydQFo-KqnzToGLik0066UBk5v-U47MRFXvCGi5796dkFGUj1Piui9swu4ROjVQBbQV0VBs3bJVoQrfQTfKv-N9U9TUBEN6GeVECu0Ay67osbNEKGMB32gcchg-9k"/>
+</div>
+<!-- Map Interactive Overlay -->
+<div class="absolute top-6 left-6 bg-white p-4 rounded-xl shadow-lg border border-outline-variant/20 max-w-[240px]">
+<h4 class="font-headline font-extrabold text-primary text-sm flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
+                            Main Headquarters
+                        </h4>
+<p class="text-xs text-on-surface-variant mt-2">1200 Industrial Way, Miami. Open for onsite consultations by appointment.</p>
+</div>
+<!-- View Map CTA -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20 backdrop-blur-[2px]">
+<button class="bg-primary text-white px-8 py-3 rounded-full font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">map</span>
+                            Open in Google Maps
+                        </button>
+</div>
+</div>
+<!-- Secondary Visual Grid -->
+<div class="lg:col-span-4 grid grid-rows-2 gap-8">
+<div class="bg-primary rounded-2xl p-8 flex flex-col justify-end text-white overflow-hidden relative">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="professional worker in safety gear inspecting a structural wall with laser measuring tool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyCXgeK9LcOjV8yvDZEeUwbXrLBvM71bEfjPmi3hwGmuZTT0CrpkZkt76bNtldmWNMPHLIZ8F1JbRKnbTsek72fmliPab3PSdia3NyUPPnpD9hDjaS5sZB_qndUX-B-GXSnsWU6HGhiREwp-XhRvS3k5gbk7J-4ivEbHW9rcmcbJeGmwZqYqqo77DiJs1-pcyQy7Xd_h4URS377E2HWKt3GSNv-pSYkDvARwtkgGSiOUoTIax9J_QddcjKj3Y-P1DXnxizKgQ_Vf0"/>
+<div class="relative z-10">
+<h4 class="font-headline font-bold text-xl mb-2">Rapid Response Team</h4>
+<p class="text-sm text-primary-fixed-dim leading-relaxed">Units stationed across the tri-county area for arrival under 60 minutes.</p>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-2xl p-8 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary">verified</span>
+<div>
+<h4 class="font-headline font-bold text-primary">Fully Insured</h4>
+<p class="text-xs text-on-surface-variant">License #VIP-992-01</p>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Comprehensive liability and environmental insurance coverage for every project size.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-slate-100 dark:bg-slate-900 tonal-shift from surface-container-low to surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-2xl font-black text-blue-950 dark:text-white font-headline mb-4 uppercase tracking-tighter">VIPORT RESTORATION</div>
+<p class="font-body text-sm leading-relaxed text-slate-600 dark:text-slate-400">Restoring structural integrity and peace of mind with editorial precision and architectural mastery.</p>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary dark:text-white mb-6">Restoration Services</h5>
+<ul class="space-y-3 font-body text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Hurricane Response</a></li>
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Water Damage</a></li>
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Mold Remediation</a></li>
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Fire &amp; Smoke</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary dark:text-white mb-6">Project Types</h5>
+<ul class="space-y-3 font-body text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Commercial Restoration</a></li>
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Residential Mitigation</a></li>
+<li><a class="text-amber-600 underline font-bold transition-colors" href="#">Request Inspection</a></li>
+<li><a class="hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary dark:text-white mb-6">Stay Protected</h5>
+<p class="text-xs text-slate-600 dark:text-slate-400 mb-4">Sign up for local restoration alerts and seasonal maintenance tips.</p>
+<div class="flex">
+<input class="bg-white/50 border-0 border-b border-outline-variant py-2 px-0 text-xs w-full focus:ring-0 focus:border-secondary" placeholder="Email Address" type="email"/>
+<button class="ml-2 text-primary">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="font-body text-xs text-slate-600 dark:text-slate-400 opacity-80">© 2024 VIPORT RESTORATION. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

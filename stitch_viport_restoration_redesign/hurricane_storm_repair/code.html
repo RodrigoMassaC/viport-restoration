@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script type='text/javascript' nonce='WhH/cWg45VmjYc6zHPtXBQ==' src='https://contribution.usercontent.google.com/NVcQUa9WXXG-OjOrYC6BP4NuiKxRqw4-ZNcuC2pNh8xzXACNZZg8c8lIjD_Of88gIXZx5VK85hmX8WYd-531tMc4mPL_ilG7MAZjSKdztRIYFD7Z_5zrLu66HE5lwxIbhJ9WQXvCRiMTQi0qf1EfSDq1luh8tvCaOAy3iw1X2b5-IyppOsWpfAkfVJ8gZQc4HucGyu5yzakWQV7CRxmw-ZVAKAhABAhWqkpLaI4g11SgzpFvHsTyFGeiRyufRrtE4d4AMdFWZq0JYXKBL3V5k6i7nX5Sz6D-y9o52yQHORWWtyz2jryIP_eqzR5mr0IlhmCZNkyvxqA7U7dTPr-dwjqVDNOcExWDoO2DPiNWO4n5Dh6hXA7BKkTMhF4JC777sCBkiuPFwJSU8Wzr1N91iDTUxSyKzNs_wq03uT6yxBa5I6DpU2spXjecRV6MGGg5_bi1qhtb-44A4nb4pzzQtHWgzEUYAeqQN9QwSutg4Z0xvkCIilTCr6Yg-dJHS9e-C_BeFo3vCvcjWsZeJIO12G6fs3qA92OQtG9t5eLza0aiCQ0Gak8JtyDBzVVtyJrX3B9kMvaL6xUWufq-2aozWw7emrE-CnDy9V1ndose8aNZGK6UIcG_sFiGoHorqTh4W9m-7mnGYDozGojiPsHTTqnlZCCs4V2LHwvEdUgmjiirVCZK1p-6ehJ5K4hZdqKl5ScQ8QKFotXtJIkleipllY3tpTQHfy1W3OKfM0kLxo_8pI720E5Qw8aOeQa-x8j7WHDHXKebWXVOLgGHZrbIkBwxgDBpeLthe2U-NQ'></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#001b31",
+                    "surface": "#f8f9ff",
+                    "inverse-surface": "#0d3251",
+                    "surface-container-low": "#eef4ff",
+                    "surface-tint": "#416181",
+                    "on-primary-container": "#7898bc",
+                    "surface-container": "#e4efff",
+                    "on-error": "#ffffff",
+                    "on-surface": "#001d34",
+                    "inverse-primary": "#a9caef",
+                    "secondary-fixed-dim": "#ffb95f",
+                    "background": "#f8f9ff",
+                    "secondary-fixed": "#ffddb8",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#001d34",
+                    "on-primary-fixed-variant": "#284968",
+                    "primary-fixed": "#cfe4ff",
+                    "surface-container-high": "#daeaff",
+                    "on-tertiary-fixed-variant": "#005305",
+                    "on-tertiary-container": "#29ac28",
+                    "error": "#ba1a1a",
+                    "tertiary": "#001f01",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#6b4200",
+                    "inverse-on-surface": "#e9f1ff",
+                    "surface-variant": "#cfe4ff",
+                    "on-surface-variant": "#43474d",
+                    "outline": "#73777e",
+                    "surface-container-highest": "#cfe4ff",
+                    "primary-fixed-dim": "#a9caef",
+                    "tertiary-fixed": "#7ffe6f",
+                    "on-tertiary-fixed": "#002201",
+                    "surface-dim": "#c0ddff",
+                    "tertiary-container": "#003702",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#62e056",
+                    "outline-variant": "#c3c7ce",
+                    "on-primary-fixed": "#001d34",
+                    "secondary-container": "#ffa92b",
+                    "secondary": "#855300",
+                    "primary-container": "#09304e",
+                    "on-secondary-fixed-variant": "#653e00",
+                    "on-secondary-fixed": "#2a1700",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#f8f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(to bottom, var(--tw-gradient-from), var(--tw-gradient-to));
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Urgency Banner -->
+<div class="w-full bg-tertiary-container text-tertiary-fixed text-center py-2 px-4 sticky top-0 z-[60]">
+<p class="font-label text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold">
+            Emergency 24/7 Response Active • Florida Statewide Disaster Relief
+        </p>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-8 w-full z-50">
+<div class="max-w-8xl mx-auto px-8">
+<div class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(0,29,52,0.06)] rounded-xl flex justify-between items-center w-full px-8 py-4">
+<div class="text-xl font-black text-blue-950 dark:text-white uppercase tracking-tighter font-headline">
+                    VIPORT RESTORATION
+                </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-amber-600 dark:text-amber-500 font-bold border-b-2 border-amber-600 font-headline transition-all duration-300" href="#">Services</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-amber-600 transition-colors font-headline" href="#">About Us</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-amber-600 transition-colors font-headline" href="#">Blog</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-amber-600 transition-colors font-headline" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden lg:block text-xs font-bold text-slate-500 tracking-widest uppercase">EN/ES</span>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-md font-headline font-bold text-sm tracking-wide hover:bg-on-secondary-container transition-all scale-95 active:scale-90">
+                        Emergency 24/7
+                    </button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-32 pb-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Professional roofing contractor in high-visibility safety gear repairing a damaged residential roof under a dramatic stormy sky with blue and grey tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9cUWlUfpiEbWSgTarRkQIMNJ58JaxwmDBaRBpAi1rZkB0Q1BbNTAInaVvPRwWu5aBA3Z37eJYsPWlnw4QcS6Hljh8XAhnwqkRA22Y-ieh13_FBJro6oHVSbzKCcBcQUPsmybxj5pkwAoJwhZzPCkqAHFUQl_YqChoRtct7uoqoHsc4r7HlUsZndxhT3oTF2_aC-MpzRajdbCiiehPyALAh3KYE6KpnE49Gf4A0jmBFgzC2UIvO8m8JOmonC2Gj70x6O7iS1YRnXs"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="bolt">bolt</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Rapid Response Unit</span>
+</div>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl text-white leading-[1.1] mb-8 tracking-tight">
+                    Florida Hurricane <br/>
+<span class="text-secondary-fixed-dim">&amp; Storm Damage</span> Experts
+                </h1>
+<p class="font-body text-xl text-primary-fixed max-w-2xl leading-relaxed mb-10 opacity-90">
+                    When disaster strikes, we guard your foundation. Professional structural restoration, emergency tarping, and debris removal for residential and commercial properties.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-md font-headline font-extrabold text-lg flex items-center gap-3 hover:bg-on-secondary-container transition-all group">
+                        Schedule Your Free Damage Assessment
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services Bento Grid -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="font-headline font-black text-4xl md:text-5xl text-primary mb-6">Mastering the Aftermath</h2>
+<div class="h-1.5 w-24 bg-secondary mx-auto mb-8"></div>
+<p class="text-on-surface-variant text-lg">Comprehensive restoration services engineered for Florida's harshest weather conditions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Roof Repair -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of industrial roof repair with precise hand tools and replacement shingles, high-end architectural finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh6xLjUYFDmI3JaI0w8mic9wp269liL9hq26RWZqeLajkHOkdkOx5bq7CK2LCqY0jEK_cnIYiXBKpJEzi1I-a7SP7NHY0wjgGpj1e-_QP6wzflmHibql8DzypPB-tagy0DvjraWQ8dKrIdQMGtP9uq_RWSuI0QgvXLr5Ko1-MH0nloEyKiF6bU0p4gQ86P-yYYx3GjPTCklYitOf18Hd9TBXhvzm7k3NJgm3aRE7tkeQdVGbyze2CBQTkzSS0JwrBd-8XoffY5738"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="text-secondary-fixed text-sm font-bold uppercase tracking-widest mb-4 block">Primary Service</span>
+<h3 class="text-white font-headline font-extrabold text-4xl mb-4 leading-tight">Advanced Roof <br/>Restoration</h3>
+<p class="text-primary-fixed opacity-80 max-w-md mb-6">Precision repair for structural integrity. From shingle replacement to complete structural re-engineering.</p>
+<div class="flex gap-4">
+<span class="bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-tighter border border-white/20">Wind Damage</span>
+<span class="bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-tighter border border-white/20">Impact Repair</span>
+</div>
+</div>
+</div>
+<!-- Emergency Tarping -->
+<div class="md:col-span-4 bg-primary text-white p-10 rounded-xl flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 bg-primary-container rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl text-secondary-fixed" data-icon="tarp">tab</span>
+</div>
+<h3 class="font-headline font-extrabold text-3xl mb-4">Emergency Tarping</h3>
+<p class="text-primary-fixed opacity-70 leading-relaxed">Immediate moisture barrier deployment to prevent secondary water damage within hours of the storm.</p>
+</div>
+<ul class="space-y-4 mt-8">
+<li class="flex items-center gap-3 text-sm font-bold">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="check_circle">check_circle</span>
+                            24/7 Rapid Deployment
+                        </li>
+<li class="flex items-center gap-3 text-sm font-bold">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="check_circle">check_circle</span>
+                            Heavy-Duty UV Protection
+                        </li>
+</ul>
+</div>
+<!-- Debris Removal -->
+<div class="md:col-span-4 bg-surface-container-high p-10 rounded-xl">
+<h3 class="font-headline font-extrabold text-3xl text-primary mb-4">Debris Removal</h3>
+<p class="text-on-surface-variant mb-10">Safe and efficient clearing of fallen trees, structural hazards, and architectural fragments.</p>
+<img class="w-full h-48 object-cover rounded-lg shadow-md" data-alt="Heavy machinery and professional crew clearing storm debris from a residential property, clean and organized workflow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7bUstd9XRMKm-AWspaBJBanMcF7Q2FJkW0IIn9xdo7FlxDNGghbh3P3uYhN55icUDdoGsV5kTMMM8-Nm56uWP0pwqYh6CKEKiFczD2q9Oevd4wTAzv21CXdTw9OHso6cWBY_bXpO045iKFUFEBpkwQoNcZ23hT0_Lh--YYXwMw-vSY2wv2HttWA7yFkTT-HnA1ebx2stHJOIa8zUE3mYfCSvfj_GbX6UQUDcbytiKyHfvY08DLEMAODbsqrpaNk0VV7lonfyfjKo"/>
+</div>
+<!-- Structural Inspection -->
+<div class="md:col-span-8 bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/15 flex flex-col md:flex-row gap-10">
+<div class="flex-1">
+<h3 class="font-headline font-extrabold text-3xl text-primary mb-4">Forensic Damage Inspection</h3>
+<p class="text-on-surface-variant mb-6">Detailed assessment utilizing thermal imaging and moisture detection technology to find hidden storm damage.</p>
+<a class="text-secondary font-bold inline-flex items-center gap-2 group" href="#">
+                            Learn about our process
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="bg-surface p-4 rounded-lg text-center">
+<span class="block text-3xl font-black text-primary font-headline">99%</span>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest">Accuracy Rate</span>
+</div>
+<div class="bg-surface p-4 rounded-lg text-center">
+<span class="block text-3xl font-black text-primary font-headline">24h</span>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest">Report Turnaround</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Insurance Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<div class="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-6">Direct Billing</div>
+<h2 class="font-headline font-black text-4xl md:text-5xl text-primary mb-8 leading-tight">We work with all major insurance companies.</h2>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+                        Navigating claims after a catastrophic storm shouldn't be your burden. Our team provides full documentation, direct billing, and professional representation to ensure your claim is processed fairly.
+                    </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+<!-- Placeholder for Insurance Logos via Icons/Text -->
+<div class="flex items-center gap-2 font-black text-primary text-xl">STATE FARM</div>
+<div class="flex items-center gap-2 font-black text-primary text-xl">ALLSTATE</div>
+<div class="flex items-center gap-2 font-black text-primary text-xl">LIBERTY</div>
+<div class="flex items-center gap-2 font-black text-primary text-xl">PROGRESSIVE</div>
+<div class="flex items-center gap-2 font-black text-primary text-xl">FARMERS</div>
+<div class="flex items-center gap-2 font-black text-primary text-xl">GEICO</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl z-0"></div>
+<div class="relative z-10 bg-white p-10 rounded-xl shadow-xl border border-outline-variant/15">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="assignment_turned_in">assignment_turned_in</span>
+<div>
+<h4 class="font-headline font-bold text-xl text-primary">Claims Advantage</h4>
+<p class="text-sm text-on-surface-variant">Zero out-of-pocket stress</p>
+</div>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="text-secondary font-bold">01</span>
+<p class="text-sm font-medium">Professional photo documentation of all storm-related damage.</p>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-bold">02</span>
+<p class="text-sm font-medium">Expert negotiation with insurance adjusters on your site.</p>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-bold">03</span>
+<p class="text-sm font-medium">Direct billing—we handle the paperwork, you handle your life.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 overflow-hidden relative">
+<div class="absolute inset-0 bg-primary z-0"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline font-black text-4xl md:text-6xl text-white mb-8">Ready to Restore <br/>Your Property?</h2>
+<p class="text-primary-fixed text-xl mb-12 opacity-80">Don't wait for secondary damage to set in. Our rapid response team is standing by across Florida.</p>
+<div class="bg-surface-container-lowest p-2 rounded-xl shadow-2xl flex flex-col md:flex-row gap-2 max-w-2xl mx-auto">
+<input class="flex-1 bg-transparent border-none focus:ring-0 px-6 py-4 font-bold text-primary placeholder:text-outline-variant" placeholder="Enter Phone Number" type="tel"/>
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-headline font-extrabold text-lg hover:bg-on-secondary-container transition-all">
+                    Schedule Free Assessment
+                </button>
+</div>
+<p class="mt-6 text-primary-fixed text-xs uppercase tracking-widest font-bold opacity-50">Or Call Us Directly: (800) VIP-RESTORE</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-slate-100 dark:bg-slate-900 border-t border-transparent tonal-shift from-surface-container-low to surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto font-[&#39;Inter&#39;] text-sm leading-relaxed">
+<div class="md:col-span-1">
+<div class="text-2xl font-black text-blue-950 dark:text-white mb-6">VIPORT</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6">The architectural guardian of Florida property restoration. Engineered for precision, built on trust.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-primary cursor-pointer hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-primary cursor-pointer hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="public">public</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-950 dark:text-white mb-6 uppercase tracking-widest text-xs">Primary Services</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Hurricane</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Water</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Mold</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Fire</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-950 dark:text-white mb-6 uppercase tracking-widest text-xs">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Commercial</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Residential</a></li>
+<li><a class="text-amber-600 underline" href="#">Request Inspection</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-950 dark:text-white mb-6 uppercase tracking-widest text-xs">Emergency Hub</h4>
+<p class="text-slate-600 dark:text-slate-400 mb-4">Available 24/7 across all Florida counties.</p>
+<div class="bg-blue-950 text-white p-4 rounded-lg">
+<p class="text-[10px] uppercase font-bold tracking-widest opacity-60 mb-1">Direct Line</p>
+<p class="text-xl font-headline font-black">1-800-RESTORE</p>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-500">
+<p>© 2024 VIPORT RESTORATION. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">License #CCC1331234</a>
+</div>
+</div>
+</footer>
+</body></html>
