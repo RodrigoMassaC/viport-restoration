@@ -61,7 +61,7 @@ export default function Navbar() {
             to="/"
             className="hover:opacity-90 transition-opacity flex-shrink-0"
           >
-            <img src={logoViport} alt="VIPORT RESTORATION" className="h-10 w-auto" />
+            <img src={logoViport} alt="VIPORT RESTORATION" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
