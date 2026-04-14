@@ -7,7 +7,7 @@ export default function MoldRemediation() {
     <div className="bg-surface text-on-surface font-body">
       <Navbar />
 
-      <main className="pt-24">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative min-h-[819px] flex items-center overflow-hidden hero-gradient">
           <div className="absolute inset-0 opacity-20">

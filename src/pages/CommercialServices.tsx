@@ -7,7 +7,7 @@ export default function CommercialServices() {
     <div className="bg-surface text-on-surface font-body">
       <Navbar />
 
-      <main className="pt-24">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative min-h-[870px] flex items-center overflow-hidden px-8">
           <div className="absolute inset-0 z-0">

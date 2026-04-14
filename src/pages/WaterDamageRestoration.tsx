@@ -7,7 +7,7 @@ export default function WaterDamageRestoration() {
     <div className="bg-surface text-on-surface font-body">
       <Navbar />
 
-      <main className="pt-24">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative w-full min-h-[870px] flex items-center overflow-hidden bg-primary">
           <div className="absolute inset-0 z-0">
