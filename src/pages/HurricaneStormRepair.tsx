@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import UrgencyBanner from "@/components/layout/UrgencyBanner";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export default function HurricaneStormRepair() {
   return (
     <div className="bg-surface text-on-surface font-body">
-      <UrgencyBanner />
       <Navbar />
 
       <main>
