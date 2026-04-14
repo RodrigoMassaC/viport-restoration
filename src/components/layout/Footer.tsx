@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoViport from "@/assets/logo_viport.png";
 
 const serviceLinks = [
   { label: "Hurricane", href: "/hurricane-storm-repair" },
@@ -19,9 +20,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
         {/* Brand */}
         <div className="col-span-1">
-          <div className="text-2xl font-black text-blue-950 dark:text-white mb-6 font-headline uppercase tracking-tighter">
-            VIPORT RESTORATION
-          </div>
+          <img src={logoViport} alt="VIPORT RESTORATION" className="h-16 w-auto mb-4" />
           <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 font-body">
             Premier architectural restoration firm. Protecting homes and businesses with precision engineering and 24/7 rapid response.
           </p>
