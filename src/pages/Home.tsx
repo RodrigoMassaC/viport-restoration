@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import workTruckImg from "@/assets/work-truck.jpg";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -232,8 +233,8 @@ export default function Home() {
               <div className="w-full md:w-1/2">
                 <img
                   className="w-full h-auto rounded-2xl shadow-2xl"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvmWc9UHLgRhU-SHSBCC0DFJn6nkrDyoZZk0_Q2EImVhJv1BiSfyGq5vx6iu7u8UU2_Kqw49ijsVecT6KRWKgfeUQR6MsobjgrUZBpG9PsO8Cby8j5qCSwd8_krMq3YjlEEPKLMsO5ojc12GiHdpVD2UasuBh-OGi30y5cv0Jix0YLLmVQlUzSjSAPBZpE9-9p8mCVIHqh2b3Gco-IDiXQQUXQ2xQL9h-OwNCzulJKgJo7y2BJbAhCR6o76q-OvGJJ-Q2zXlE2kqM"
-                  alt="Viport coverage van"
+src={workTruckImg}
+                   alt="Viport restoration work truck"
                 />
               </div>
               <div className="w-full md:w-1/2 space-y-6">
