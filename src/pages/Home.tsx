@@ -7,7 +7,7 @@ export default function Home() {
     <div className="bg-surface text-on-surface font-body">
       <Navbar />
 
-      <main className="pt-24">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative min-h-[921px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
