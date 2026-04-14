@@ -23,7 +23,7 @@ export default function Footer() {
             VIPORT RESTORATION
           </div>
           <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 font-body">
-            Florida's premier architectural restoration firm. Protecting homes and businesses with precision engineering and 24/7 rapid response.
+            Premier architectural restoration firm. Protecting homes and businesses with precision engineering and 24/7 rapid response.
           </p>
           <div className="flex gap-4">
             <span className="w-10 h-10 bg-slate-200 dark:bg-slate-800 rounded-lg flex items-center justify-center text-primary cursor-pointer hover:bg-secondary hover:text-white transition-all">

@@ -111,7 +111,7 @@ export default function ResidentialServices() {
                 <div>
                   <span className="material-symbols-outlined text-4xl text-primary mb-6 group-hover:-translate-y-1 transition-transform block">cyclone</span>
                   <h3 className="font-headline text-2xl font-bold text-primary mb-4">Storm & Wind</h3>
-                  <p className="text-on-surface-variant text-sm leading-relaxed mb-8">Emergency tarping and immediate structural stabilization following extreme Florida weather events.</p>
+                  <p className="text-on-surface-variant text-sm leading-relaxed mb-8">Emergency tarping and immediate structural stabilization following extreme weather events.</p>
                 </div>
                 <Link className="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all" to="/hurricane-storm-repair">
                   Emergency Response <span className="material-symbols-outlined text-sm">east</span>
