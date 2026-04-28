@@ -45,10 +45,9 @@ export default function ContactUs() {
 
   return (
     <div className="bg-surface text-on-surface font-body">
-      <UrgencyBanner />
       <Navbar />
 
-      <main className="pt-32 pb-24">
+      <main className="pb-24">
         {/* ─── Hero + Contact Form ─── */}
         <section className="max-w-7xl mx-auto px-8 mb-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">

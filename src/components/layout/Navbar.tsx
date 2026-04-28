@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logoViport from "@/assets/logo_viport.png";
 
 const services = [
   { label: "Water Damage Restoration", href: "/water-damage-restoration", icon: "water_drop" },
@@ -46,7 +47,7 @@ export default function Navbar() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-on-tertiary-container opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
           </span>
-          Emergency 24/7 Response Available Across Florida
+          Emergency 24/7 Response Available Nationwide
         </span>
         <span className="text-[10px] font-bold uppercase tracking-wider hidden sm:block">Call Now: (800) VIP-REST</span>
       </div>
@@ -58,9 +59,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             to="/"
-            className="text-xl font-black text-blue-950 dark:text-white uppercase tracking-tighter font-headline hover:opacity-90 transition-opacity flex-shrink-0"
+            className="hover:opacity-90 transition-opacity flex-shrink-0"
           >
-            VIPORT RESTORATION
+            <img src={logoViport} alt="VIPORT RESTORATION" className="h-20 w-auto" />
           </Link>
 
           {/* Desktop Nav */}

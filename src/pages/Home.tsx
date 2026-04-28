@@ -42,10 +42,9 @@ export default function Home() {
 
   return (
     <div className="bg-surface text-on-surface font-body">
-      <UrgencyBanner />
       <Navbar />
 
-      <main className="pt-24">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative min-h-[921px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -59,7 +58,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
                 <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                Florida's Trusted Guardians
+                Your Trusted Guardians
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-white font-headline leading-[1.05] tracking-tighter">
                 Residential and commercial damage restoration services available 24/7
@@ -172,7 +171,7 @@ export default function Home() {
                 <div className="absolute -bottom-8 -right-8 w-64 bg-primary p-8 rounded-2xl editorial-shadow hidden md:block">
                   <span className="text-4xl font-black text-white font-headline block mb-2">15+</span>
                   <span className="text-white/70 text-xs font-bold uppercase tracking-widest leading-tight block">
-                    Years of industry leadership in Florida
+                    Years of industry leadership nationwide
                   </span>
                 </div>
               </div>
@@ -188,7 +187,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-8 py-4 border-y border-outline-variant/30">
                   <div>
                     <h4 className="text-primary font-bold mb-1">Elite Fleet</h4>
-                    <p className="text-on-surface-variant text-sm">24 specialized response vehicles across Florida.</p>
+                    <p className="text-on-surface-variant text-sm">24 specialized response vehicles across the country.</p>
                   </div>
                   <div>
                     <h4 className="text-primary font-bold mb-1">Direct Billing</h4>
@@ -315,14 +314,14 @@ export default function Home() {
               <div className="w-full md:w-1/2">
                 <img
                   className="w-full h-auto rounded-2xl shadow-2xl"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvmWc9UHLgRhU-SHSBCC0DFJn6nkrDyoZZk0_Q2EImVhJv1BiSfyGq5vx6iu7u8UU2_Kqw49ijsVecT6KRWKgfeUQR6MsobjgrUZBpG9PsO8Cby8j5qCSwd8_krMq3YjlEEPKLMsO5ojc12GiHdpVD2UasuBh-OGi30y5cv0Jix0YLLmVQlUzSjSAPBZpE9-9p8mCVIHqh2b3Gco-IDiXQQUXQ2xQL9h-OwNCzulJKgJo7y2BJbAhCR6o76q-OvGJJ-Q2zXlE2kqM"
-                  alt="Viport coverage van"
+src={workTruckImg}
+                   alt="Viport restoration work truck"
                 />
               </div>
               <div className="w-full md:w-1/2 space-y-6">
                 <span className="text-secondary font-bold text-sm uppercase tracking-widest">Our Coverage</span>
                 <h2 className="text-4xl md:text-5xl font-black text-primary font-headline tracking-tighter">
-                  We get to where you are in Florida.
+                  We get to where you are, nationwide.
                 </h2>
                 <p className="text-on-surface-variant text-lg">
                   With strategic depots located throughout the state, our fleet is always within reach. Whether it's a coastal storm surge or a residential pipe burst, our logistics engine ensures we arrive before the damage spreads.
@@ -340,45 +339,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── Blog ─── */}
-        <section className="py-24 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto px-8">
-            <div className="flex justify-between items-end mb-12">
-              <h2 className="text-4xl font-black text-primary font-headline tracking-tighter">Latest insights.</h2>
-              <a className="text-secondary font-bold text-sm uppercase tracking-widest border-b-2 border-secondary pb-1" href="#">View All Posts</a>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBjBRCRyJ--e2D0j_yClrlCMp9lPZnUzw5GRJib_iVTJaJ0HkgGaskefZdUmpgKWuPTWB_Ns2WIKRM4LGsBOlHx6n4-X9MoFGYuCo5PizYVnOZOZ90gksEPCbEdlevzdoYfh5eKiEIXfQt1m9jDwyTGI748YYSi2HFaAqZ18I_JyiNjGrKwfGxDkV6U7YxdokH841U9fmAr5bicmGZLBNdH2vY8nIxCMW2ZgP6dESdvHPVEP85Q52LzbAFoNQYQLYaqgh6vMr1rXNo",
-                  title: "Preventing Mold After Heavy Summer Rain",
-                  desc: "Understanding the 48-hour window for moisture mitigation in humid climates.",
-                },
-                {
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC6OyBFLKMKq2KrpbVS8PUOIU53UpLhSnhx63hZyzx0kQU9pdLK3V_h-cMa1q359tau9xWou6EMgB2eghLT6QWSG1utM6n3A_gZjJdhNnTHxaH_6VZZCWj4ZkhVm6l-DQ1knr2RgdKsSSl9niHLcL-qbh2KI-69vSBC8wcdRRKwKuVkmuctgRNBGv4zcC4okDId_oH25M3wcrdcQ0CQvOQVB1aLS25xp7IWEkjyAMsfhRXksijdIweohK-lOlI-eO-T9dHreBC-7Co",
-                  title: "Commercial Continuity Planning",
-                  desc: "How professional restoration can save your business from months of closure.",
-                },
-                {
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuADW3ooyIEN6vrzfQero2LP-TmeKToG2L0hvLpRIm7l8r7dAxGo-yTMD2BPoTDFDjYCuXNwNliaCgQesIIzt9FUdKbtHAV3WDjL7JTmV_MmMN8XklOj1jzQVAlPsu_LRWIwGuUJaZqFzDsoiBsBAdRmmsOozjsYX8c07FCykQEPqHXezGOtphLNeZR8Zfr6JnJ_PhKy9RhpmyDZd3dZBQxnhteSXGcqB8JBQ1teVxPxaTKTTtjxHmByyYaJMQEvekYm8UbrV3kA4Do",
-                  title: "Hurricane Readiness 2024",
-                  desc: "Essential structural reinforcements for the upcoming season in Florida.",
-                },
-              ].map((post) => (
-                <div key={post.title} className="group cursor-pointer">
-                  <div className="aspect-[16/10] overflow-hidden rounded-xl mb-4">
-                    <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src={post.img} alt={post.title} />
-                  </div>
-                  <h3 className="text-xl font-bold text-primary font-headline group-hover:text-secondary transition-colors mb-2">{post.title}</h3>
-                  <p className="text-on-surface-variant text-sm mb-4 line-clamp-2">{post.desc}</p>
-                  <span className="text-xs font-bold text-secondary tracking-widest uppercase flex items-center gap-2">
-                    Read more <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

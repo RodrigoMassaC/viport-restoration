@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
-import UrgencyBanner from "@/components/layout/UrgencyBanner";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export default function CommercialServices() {
   return (
     <div className="bg-surface text-on-surface font-body">
-      <UrgencyBanner />
       <Navbar />
 
-      <main className="pt-24">
+      <main>
         {/* ─── Hero ─── */}
         <section className="relative min-h-[870px] flex items-center overflow-hidden px-8">
           <div className="absolute inset-0 z-0">
