@@ -1,9 +1,45 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import UrgencyBanner from "@/components/layout/UrgencyBanner";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { supabase } from "@/lib/supabase";
 
 export default function Home() {
+  const [ctaForm, setCtaForm] = useState({
+    full_name: "",
+    phone: "",
+    location: "",
+    damage_type: "Select Damage Type",
+  });
+  const [ctaStatus, setCtaStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleCtaChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setCtaForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleCtaSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!ctaForm.full_name || !ctaForm.phone) return;
+    setCtaStatus("loading");
+    const { error } = await supabase.from("inspection_requests").insert([
+      {
+        full_name: ctaForm.full_name,
+        phone: ctaForm.phone,
+        location: ctaForm.location,
+        damage_type: ctaForm.damage_type === "Select Damage Type" ? null : ctaForm.damage_type,
+        source: "homepage_cta",
+      },
+    ]);
+    if (error) {
+      console.error("Supabase error:", error);
+      setCtaStatus("error");
+    } else {
+      setCtaStatus("success");
+      setCtaForm({ full_name: "", phone: "", location: "", damage_type: "Select Damage Type" });
+    }
+  };
+
   return (
     <div className="bg-surface text-on-surface font-body">
       <UrgencyBanner />
@@ -192,35 +228,80 @@ export default function Home() {
                 </div>
 
                 <div className="bg-white rounded-2xl p-8 editorial-shadow">
-                  <form className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-1">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
-                        <input className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0" placeholder="John Doe" type="text" />
+                  {ctaStatus === "success" ? (
+                    <div className="flex flex-col items-center justify-center py-12 text-center">
+                      <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                        <span className="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+                      </div>
+                      <h3 className="font-headline font-bold text-xl text-primary mb-2">Request Received!</h3>
+                      <p className="text-on-surface-variant text-sm">Our team will contact you within 60 minutes.</p>
+                    </div>
+                  ) : (
+                    <form className="space-y-4" onSubmit={handleCtaSubmit}>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-1">
+                          <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+                          <input
+                            name="full_name"
+                            value={ctaForm.full_name}
+                            onChange={handleCtaChange}
+                            required
+                            className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0"
+                            placeholder="John Doe"
+                            type="text"
+                          />
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Phone Number</label>
+                          <input
+                            name="phone"
+                            value={ctaForm.phone}
+                            onChange={handleCtaChange}
+                            required
+                            className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0"
+                            placeholder="(555) 000-0000"
+                            type="tel"
+                          />
+                        </div>
                       </div>
                       <div className="space-y-1">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Phone Number</label>
-                        <input className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0" placeholder="(555) 000-0000" type="tel" />
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Location</label>
+                        <input
+                          name="location"
+                          value={ctaForm.location}
+                          onChange={handleCtaChange}
+                          className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0"
+                          placeholder="Miami, FL"
+                          type="text"
+                        />
                       </div>
-                    </div>
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Location</label>
-                      <input className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0" placeholder="Miami, FL" type="text" />
-                    </div>
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Damage Type</label>
-                      <select className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0 appearance-none">
-                        <option>Select Damage Type</option>
-                        <option>Water Damage</option>
-                        <option>Fire/Smoke</option>
-                        <option>Mold Remediation</option>
-                        <option>Storm/Hurricane</option>
-                      </select>
-                    </div>
-                    <button className="w-full bg-secondary text-on-secondary py-4 rounded-lg font-black text-sm uppercase tracking-[0.2em] mt-4 hover:bg-on-secondary-container transition-all" type="submit">
-                      Submit Inspection Request
-                    </button>
-                  </form>
+                      <div className="space-y-1">
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Damage Type</label>
+                        <select
+                          name="damage_type"
+                          value={ctaForm.damage_type}
+                          onChange={handleCtaChange}
+                          className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0 appearance-none"
+                        >
+                          <option>Select Damage Type</option>
+                          <option>Water Damage</option>
+                          <option>Fire/Smoke</option>
+                          <option>Mold Remediation</option>
+                          <option>Storm/Hurricane</option>
+                        </select>
+                      </div>
+                      {ctaStatus === "error" && (
+                        <p className="text-red-500 text-xs font-medium">Something went wrong. Please try again.</p>
+                      )}
+                      <button
+                        className="w-full bg-secondary text-on-secondary py-4 rounded-lg font-black text-sm uppercase tracking-[0.2em] mt-4 hover:bg-on-secondary-container transition-all disabled:opacity-60"
+                        type="submit"
+                        disabled={ctaStatus === "loading"}
+                      >
+                        {ctaStatus === "loading" ? "Sending..." : "Submit Inspection Request"}
+                      </button>
+                    </form>
+                  )}
                 </div>
               </div>
             </div>

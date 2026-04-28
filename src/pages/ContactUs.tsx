@@ -1,9 +1,48 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import UrgencyBanner from "@/components/layout/UrgencyBanner";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { supabase } from "@/lib/supabase";
 
 export default function ContactUs() {
+  const [form, setForm] = useState({
+    full_name: "",
+    phone: "",
+    email: "",
+    service_type: "Water Damage",
+    description: "",
+  });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.full_name || !form.phone || !form.email) return;
+    setStatus("loading");
+    const { error } = await supabase.from("inspection_requests").insert([
+      {
+        full_name: form.full_name,
+        phone: form.phone,
+        email: form.email,
+        damage_type: form.service_type,
+        description: form.description,
+        source: "contact_page",
+      },
+    ]);
+    if (error) {
+      console.error("Supabase error:", error);
+      setStatus("error");
+    } else {
+      setStatus("success");
+      setForm({ full_name: "", phone: "", email: "", service_type: "Water Damage", description: "" });
+    }
+  };
+
+
   return (
     <div className="bg-surface text-on-surface font-body">
       <UrgencyBanner />
@@ -63,47 +102,95 @@ export default function ContactUs() {
                   Request Inspection
                   <span className="h-px flex-1 bg-outline-variant/20"></span>
                 </h3>
-                <form className="space-y-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="relative">
-                      <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Full Name</label>
-                      <input className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60" placeholder="John Doe" type="text" />
+                {status === "success" ? (
+                  <div className="flex flex-col items-center justify-center py-16 text-center">
+                    <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                      <span className="material-symbols-outlined text-green-600 text-4xl">check_circle</span>
                     </div>
-                    <div className="relative">
-                      <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Phone Number</label>
-                      <input className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60" placeholder="+1 (555) 000-0000" type="tel" />
-                    </div>
+                    <h3 className="font-headline font-bold text-2xl text-primary mb-3">Request Sent!</h3>
+                    <p className="text-on-surface-variant max-w-xs">Our team has received your request and will reach out within 60 minutes.</p>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="relative">
-                      <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Email Address</label>
-                      <input className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60" placeholder="john@example.com" type="email" />
+                ) : (
+                  <form className="space-y-8" onSubmit={handleSubmit}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="relative">
+                        <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Full Name</label>
+                        <input
+                          name="full_name"
+                          value={form.full_name}
+                          onChange={handleChange}
+                          required
+                          className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60"
+                          placeholder="John Doe"
+                          type="text"
+                        />
+                      </div>
+                      <div className="relative">
+                        <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Phone Number</label>
+                        <input
+                          name="phone"
+                          value={form.phone}
+                          onChange={handleChange}
+                          required
+                          className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60"
+                          placeholder="+1 (555) 000-0000"
+                          type="tel"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="relative">
+                        <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Email Address</label>
+                        <input
+                          name="email"
+                          value={form.email}
+                          onChange={handleChange}
+                          required
+                          className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60"
+                          placeholder="john@example.com"
+                          type="email"
+                        />
+                      </div>
+                      <div className="relative">
+                        <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Service Type</label>
+                        <select
+                          name="service_type"
+                          value={form.service_type}
+                          onChange={handleChange}
+                          className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all appearance-none"
+                        >
+                          <option>Water Damage</option>
+                          <option>Mold Remediation</option>
+                          <option>Fire &amp; Smoke</option>
+                          <option>Hurricane Response</option>
+                          <option>Residential Restoration</option>
+                          <option>Commercial Property</option>
+                        </select>
+                      </div>
                     </div>
                     <div className="relative">
-                      <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Service Type</label>
-                      <select className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all appearance-none">
-                        <option>Water Damage</option>
-                        <option>Mold Remediation</option>
-                        <option>Fire & Smoke</option>
-                        <option>Hurricane Response</option>
-                        <option>Residential Restoration</option>
-                        <option>Commercial Property</option>
-                      </select>
+                      <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Describe Your Situation</label>
+                      <textarea
+                        name="description"
+                        value={form.description}
+                        onChange={handleChange}
+                        className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60 resize-none"
+                        placeholder="Briefly describe the damage or project needs..."
+                        rows={4}
+                      ></textarea>
                     </div>
-                  </div>
-                  <div className="relative">
-                    <label className="text-[10px] uppercase tracking-widest font-extrabold text-outline mb-2 block">Describe Your Situation</label>
-                    <textarea
-                      className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:ring-0 focus:border-secondary py-3 px-0 text-primary font-medium transition-all placeholder:text-outline-variant/60 resize-none"
-                      placeholder="Briefly describe the damage or project needs..."
-                      rows={4}
-                    ></textarea>
-                  </div>
-                  <button className="w-full bg-secondary text-on-secondary font-headline font-extrabold py-5 rounded-md text-lg shadow-lg hover:shadow-xl hover:bg-on-secondary-container transition-all flex items-center justify-center gap-3 active:scale-95">
-                    Send Request
-                    <span className="material-symbols-outlined">arrow_forward</span>
-                  </button>
-                </form>
+                    {status === "error" && (
+                      <p className="text-red-500 text-sm font-medium">Something went wrong. Please try again.</p>
+                    )}
+                    <button
+                      className="w-full bg-secondary text-on-secondary font-headline font-extrabold py-5 rounded-md text-lg shadow-lg hover:shadow-xl hover:bg-on-secondary-container transition-all flex items-center justify-center gap-3 active:scale-95 disabled:opacity-60"
+                      disabled={status === "loading"}
+                    >
+                      {status === "loading" ? "Sending..." : "Send Request"}
+                      {status !== "loading" && <span className="material-symbols-outlined">arrow_forward</span>}
+                    </button>
+                  </form>
+                )}
               </div>
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-surface-container-highest/50 rounded-full blur-3xl -z-0"></div>
             </div>
