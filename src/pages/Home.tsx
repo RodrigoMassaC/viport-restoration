@@ -4,6 +4,7 @@ import UrgencyBanner from "@/components/layout/UrgencyBanner";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { supabase } from "@/lib/supabase";
+import workTruckImg from "@/assets/work-truck.jpg";
 
 export default function Home() {
   const [ctaForm, setCtaForm] = useState({
