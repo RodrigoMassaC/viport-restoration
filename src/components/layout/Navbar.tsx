@@ -139,9 +139,7 @@ export default function Navbar() {
 
           {/* Right CTA */}
           <div className="flex items-center gap-4">
-            <span className="text-slate-700 text-xs font-bold tracking-widest cursor-pointer hover:text-amber-600 transition-all hidden lg:block">
-              EN/ES
-            </span>
+
             <Link
               to="/contact"
               className="bg-secondary text-on-secondary px-5 py-2.5 rounded-lg font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform shadow-lg hover:bg-on-secondary-container"
