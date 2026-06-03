@@ -64,7 +64,7 @@ export default function ContactUs() {
 
               <div className="space-y-8">
                 {[
-                  { icon: "phone_in_talk", title: "Call Our Experts", line1: "(800) VIP-REST", line2: "Available 24/7 for emergencies" },
+                  { icon: "phone_in_talk", title: "Call Our Experts", line1: "1-844-847-7378", line2: "Available 24/7 for emergencies" },
                   { icon: "location_on", title: "Visit Our Office", line1: "1200 Industrial Way, Suite 400", line2: "Miami, FL 33101" },
                   { icon: "alternate_email", title: "General Inquiries", line1: "contact@viportrestoration.com", line2: "" },
                 ].map((item) => (

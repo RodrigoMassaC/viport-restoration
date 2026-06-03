@@ -9,7 +9,7 @@ export default function UrgencyBanner() {
         Emergency 24/7 Response Available Nationwide
       </span>
       <div className="flex items-center gap-4 text-[10px] font-bold uppercase tracking-wider">
-        <span>Call Now: (800) VIP-REST</span>
+        <span>Call Now: 1-844-847-7378</span>
       </div>
     </div>
   );

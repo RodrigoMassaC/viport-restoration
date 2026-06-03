@@ -49,7 +49,7 @@ export default function Navbar() {
           </span>
           Emergency 24/7 Response Available Nationwide
         </span>
-        <span className="text-[10px] font-bold uppercase tracking-wider hidden sm:block">Call Now: (800) VIP-REST</span>
+        <span className="text-[10px] font-bold uppercase tracking-wider hidden sm:block">Call Now: 1-844-847-7378</span>
       </div>
 
       {/* Navbar */}
