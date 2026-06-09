@@ -24,7 +24,7 @@ const ContactSection = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-accent" />
-                <span className="font-body text-foreground">1-844-847-7378</span>
+                <span className="font-body text-foreground">1855-VIPORT1 / 1855-8476781</span>
               </div>
               <div className="flex items-center gap-4">
                 <Mail className="w-5 h-5 text-accent" />

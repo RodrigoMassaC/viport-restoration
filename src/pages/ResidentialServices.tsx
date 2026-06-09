@@ -180,8 +180,8 @@ export default function ResidentialServices() {
                 <Link to="/contact" className="bg-secondary text-on-secondary px-10 py-5 rounded-lg font-bold editorial-shadow hover:scale-105 active:scale-95 transition-all text-lg">
                   Start Your Claim Now
                 </Link>
-                <a href="tel:1-844-847-7378" className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-lg font-bold hover:bg-white/20 transition-all text-lg">
-                  1-844-847-7378
+                <a href="tel:18558476781" className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-lg font-bold hover:bg-white/20 transition-all text-lg">
+                  1855-VIPORT1 / 1855-8476781
                 </a>
               </div>
             </div>

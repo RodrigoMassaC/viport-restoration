@@ -182,7 +182,7 @@ export default function HurricaneStormRepair() {
                 Schedule Free Assessment
               </Link>
             </div>
-            <p className="mt-6 text-primary-fixed text-xs uppercase tracking-widest font-bold opacity-50">Or Call Us Directly: 1-844-847-7378</p>
+            <p className="mt-6 text-primary-fixed text-xs uppercase tracking-widest font-bold opacity-50">Or Call Us Directly: 1855-VIPORT1 / 1855-8476781</p>
           </div>
         </section>
       </main>
