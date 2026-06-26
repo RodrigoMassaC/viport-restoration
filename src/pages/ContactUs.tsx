@@ -65,7 +65,7 @@ export default function ContactUs() {
               <div className="space-y-8">
                 {[
                   { icon: "phone_in_talk", title: "Call Our Experts", line1: "1855-VIPORT1 / 1855-8476781", line2: "Available 24/7 for emergencies" },
-                  { icon: "location_on", title: "Visit Our Office", line1: "1200 Industrial Way, Suite 400", line2: "Miami, FL 33101" },
+                  { icon: "location_on", title: "Visit Our Office", line1: "3105 NW 107th Ave Ste 400, Doral, FL 33172", line2: "" },
                   { icon: "alternate_email", title: "General Inquiries", line1: "contact@viportrestoration.com", line2: "" },
                 ].map((item) => (
                   <div key={item.icon} className="flex items-start gap-6">
@@ -205,7 +205,7 @@ export default function ContactUs() {
                 <img
                   className="w-full h-full object-cover grayscale opacity-80"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnpeC6DGugBR5KphjN1FHysOGewVzJyS4ppG1IaXC9idUiKmk2to-Y9aLoViWeczhPJSwHZIJBqYK7T1gCC3_5nnY0z1bGspbjqlIA0sboQrbV5NYjhbziLgbNFD0pWoWwA9PECt8mGnZ3bH2ydQFo-KqnzToGLik0066UBk5v-U47MRFXvCGi5796dkFGUj1Piui9swu4ROjVQBbQV0VBs3bJVoQrfQTfKv-N9U9TUBEN6GeVECu0Ay67osbNEKGMB32gcchg-9k"
-                  alt="Map view of Miami"
+                  alt="Map view of Doral office"
                 />
               </div>
               {/* Overlay card */}
@@ -214,7 +214,7 @@ export default function ContactUs() {
                   <span className="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
                   Main Headquarters
                 </h4>
-                <p className="text-xs text-on-surface-variant mt-2">1200 Industrial Way, Miami. Open for onsite consultations by appointment.</p>
+                <p className="text-xs text-on-surface-variant mt-2">3105 NW 107th Ave Ste 400, Doral, FL 33172. Open for onsite consultations by appointment.</p>
               </div>
               {/* Hover CTA */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/20 backdrop-blur-[2px]">
