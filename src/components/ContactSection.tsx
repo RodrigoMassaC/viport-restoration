@@ -32,7 +32,7 @@ const ContactSection = () => {
               </div>
               <div className="flex items-center gap-4">
                 <MapPin className="w-5 h-5 text-accent" />
-                <span className="font-body text-foreground">Ciudad de México, MX</span>
+                <span className="font-body text-foreground">3105 NW 107th Ave Ste 400, Doral, FL 33172</span>
               </div>
             </div>
           </div>

@@ -271,7 +271,7 @@ export default function Home() {
                           value={ctaForm.location}
                           onChange={handleCtaChange}
                           className="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 transition-colors py-3 px-0"
-                          placeholder="Miami, FL"
+                          placeholder="Doral, FL"
                           type="text"
                         />
                       </div>
